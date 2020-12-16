@@ -1,0 +1,9 @@
+# docker run -it --rm --env-file ./dotenv ghcr.io/jef/streetmerchant:nightly
+version: '3'
+
+services:
+  streetmerchant:
+    image: ghcr.io/jef/streetmerchant:nightly
+    restart: always
+    env_file:
+      - ./dotenv_damn
